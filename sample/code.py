@@ -4,3 +4,4 @@ sys.stdout = open("./output.txt","w")
 sys.stdin = open("./input.txt","r")
 
 print("hello")
+print(input())
