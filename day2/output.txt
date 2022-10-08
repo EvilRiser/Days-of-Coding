@@ -1,1 +1,7 @@
-hello
+45 --> 9 --> 
+45 --> 9 --> 35 --> 
+32 --> 
+banana --> apple --> mango --> grapes --> 
+4
+banana --> apple --> mango --> 
+banana --> apple --> orange --> mango --> 
