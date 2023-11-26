@@ -1,20 +1,21 @@
 import sys
-sys.stdout = open("./output.txt","w")
-sys.stdin = open("./input.txt","r")
+from typing import List, Optional
 
-from typing import List
+sys.stdout = open("./output.txt", "w")
+sys.stdin = open("./input.txt", "r")
 
 my_output = []
 
-def printNos(x:int) -> List[int]:
+
+def print_nos(x: int) -> Optional[List[int]]:
     if x < 1:
         return
     else:
         my_output.append(x)
-        printNos(x-1)
+        print_nos(x - 1)
         return my_output
 
 
 if __name__ == '__main__':
-    x = int(input())
-    print(printNos(x))
+    input_ = int(input())
+    print(*print_nos(input_))
